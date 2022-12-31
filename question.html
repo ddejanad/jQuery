@@ -3,7 +3,7 @@
 
 <head>
     <title>Dejanka</title>
-    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="C:\Users\Dejana\proektnazadaca1\proektnac.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,27 +76,28 @@
 
     <p>Here, you can ask whatever questions you want.</p>
     <div class="search-bar2">
-      <input id="kopc" type="text" placeholder="Ask a question..">
+      <input id="question_input" type="text" placeholder="Ask a question..">
     </div>
-    <button id="but">Send question</button>
+    <button id="submit-ask-question-button">Send question</button>
   </div>
 
        
 
    <script>
-    let kopce=document.getElementById("kopc").value;
-    function click(){
     
-    if(kopce = " ")
+    function onSubmitAskQuestionForm(){
+      let questionInput=document.getElementById("question_input").value;
+     
+          if(questionInput ==="")
     {
-      window.alert("prasanjeto ne se isprati uspesno");
+      window.alert("Не испративте прашање");
     }
     else{
-      window.alert("prasanjeto ne se isprati uspesno");
+      window.alert("Прашањето се испрати успешно");
     }
 
     }
-    getElementById("but").document.addEventListener("click", click, false);
+    document.getElementById("submit-ask-question-button").addEventListener("click", onSubmitAskQuestionForm, false);
    </script>
 
     
