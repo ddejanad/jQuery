@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dejanka</title>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\Dejana\proektnazadaca1\proektnac.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,100;1,200&display=swap" rel="stylesheet"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+
+</script>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  color: blueviolet;
+}
+
+h2{
+  font-size: 200%;
+  color: #b881b4;
+  margin-left: 500px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+
+}
+
+td, th {
+  border: 1px solid #875684;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #efedee;
+}
+
+p{
+  font-size: 25px;
+  color: black;
+  font-style: oblique;
+}
+
+
+</style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-links">
+     <ul>
+         <li><a href="C:\Users\Dejana\proektnazadaca1\proektnah.html">HOME</a></li>
+         <li><a href="C:\Users\Dejana\proektnazadaca1\blog.html">BLOG</a></li>
+         <li><a href="C:\Users\Dejana\proektnazadaca1\miniinsta.html">INSTA</a></li>
+         <li><a href="C:\Users\Dejana\proektnazadaca1\question.html">QUESTION</a></li>
+         <li><a href="C:\Users\Dejana\proektnazadaca1\aboutme.html">CONTACT</a></li>
+         <li><a href="C:\Users\Dejana\proektnazadaca1\dejana.html">GRADES</a></li>
+     </ul>
+    </div>
+ </nav>
+<h2>Behind the scenes of Dejana's student life</h2>
+<p>Кој предмет го бараш?</p>  
+<input id="myInput" type="text" placeholder="Search..">
+<br><br>
+<div class="table">
+<table>
+  <thead>
+  <tr>
+    <th>Име на предмет</th>
+    <th>Семестар кој е положен</th>
+    <th>Оцена</th>
+  </tr>
+  </thead>
+  <tbody id="myTable">
+  <tr>
+    <td>Математика 1</td>
+    <td>Јунска сесија</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>Математика 2</td>
+    <td>Јунска сесија</td>
+
+    <td>6 :(</td>
+  </tr>
+  <tr>
+    <td>Основи на електротехника</td>
+    <td>Септемвриска сесија</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>Основи на електрични кола</td>
+    <td>Јануарска сесија</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>Физика 1</td>
+    <td>Јануарска сесија</td>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td>Програмирање и алгоритми</td>
+    <td>Јануарска сесија</td>
+    <td>6 :(</td>
+  </tr>
+  <tr>
+    <td>Руски јазик</td>
+    <td>Јануарска сесија</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>Податочни структури и Програмирање</td>
+    <td>Јунска сесија</td>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td>Физика 2</td>
+    <td>Јунска сесија</td>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td>Практикум по Матлаб</td>
+    <td>Јунска сесија</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>Логички дизајн</td>
+    <td>Јануарска сесија</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>Сигнали и системи</td>
+    <td>Јануарска сесија</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>електроника</td>
+    <td>Јануарска сесија</td>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td>Математика 3</td>
+    <td>Септемвриска сесија</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>Интернет технологии</td>
+    <td>Јануарска сесија</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>Податочни структури и анализа на алгоритми</td>
+    <td>Јунска сесија</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>Моделирање на податоци и бази</td>
+    <td>Јунска сесија</td>
+    <td>6 :(</td>
+  </tr>
+  <tr>
+    <td>Компјутерски архитектури</td>
+    <td>Јунска сесија</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>Теорија на автоматско управување</td>
+    <td>Јунска сесија</td>
+    <td>10</td>
+
+  </tr>
+  <tr>
+    <td>Дискретна математика</td>
+    <td>Јунска сесија</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>Нумерички методи</td>
+    <td>Септемвриска сесија</td>
+    <td>6 :(</td>
+  </tr>
+
+  </tbody>
+</table>
+  
+</div>
+
+</body>
+</html>
